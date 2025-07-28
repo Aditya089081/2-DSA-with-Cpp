@@ -1,0 +1,20 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Auto Build & Run Current C++ File",
+      "type": "shell",
+      "command": "cmd.exe",
+      "args": [
+        "/c",
+        "mkdir \"${fileDirname}\\output\" 2>nul && g++ \"${file}\" -o \"${fileDirname}\\output\\${fileBasenameNoExtension}.exe\" && \"${fileDirname}\\output\\${fileBasenameNoExtension}.exe\" & pause"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "detail": "Builds and runs the current C++ file into its folder's output/ directory"
+    }
+  ]
+}
