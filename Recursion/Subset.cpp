@@ -19,7 +19,8 @@
 // 1 <= nums.length <= 10
 // -10 <= nums[i] <= 10
 // All the numbers of nums are unique.
-
+#include<bits/stdc++.h>
+using namespace std;
 class Solution {
 public:
     void subsequence(vector<int> arr,int index,int n,vector<vector<int>> &ans,vector<int> &temp){

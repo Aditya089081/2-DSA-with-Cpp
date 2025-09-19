@@ -46,7 +46,7 @@ public:
         transpose(matrix);
         reverse(matrix);
     }
-    void rotate(vector<vector<int>>& matrix) { //180 degree
+    void rotate1(vector<vector<int>>& matrix) { //180 degree
         // transpose(matrix);
         reverse1(matrix);
     }
