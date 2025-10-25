@@ -26,7 +26,7 @@ int circularMatch(string text,string pattern){
     vector<int> lps(pattern.size(),0);
     LPSarray(lps,pattern);
     string s = rotate(text);
-    int first = 0;
+    int first = 0; 
     int second = 0;
     while(first<s.size()){
         if(s[first] == pattern[second]){
