@@ -38,6 +38,21 @@ int main(){
     int arr[] = {1,2,3,4,5,6,7,-1};
     Node *Head = create(arr,0,nullptr);
     Node *tail = tailP(Head);
+    int sum = 7;
+    Node *first = Head;
+    Node *second = tail;
+    while(first!=second){
+        int a = first->value+second->value;
+        if(a==sum){
+            cout<<first->value<<" --- "<<second->value<<endl;
+            first = first->next;
+            second = second->prev;
+        }else if(a<sum){
+            first = first->next;
+        }else{
+            second = second->prev;
+        }
+    }
     
 
 }
